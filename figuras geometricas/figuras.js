@@ -55,7 +55,10 @@ function hallarareaCuadrado () {
     const input = document.getElementById("input-cuadrado")
     const value = input.value;
     const area = areaCuadrado(value)
-    alert(area)
+    const contenedor = document.querySelector(".conteiner")
+    p = document.createElement("p")
+    p = document.createTextNode(area)
+    contenedor.appendChild(p)
 }
 
 
@@ -63,5 +66,8 @@ function hallarperimetroCuadrado () {
     const input = document.getElementById("input-cuadrado")
     const value = input.value;
     const perimetro = perimetroCuadrado(value)
-    alert(perimetro)
+    const contenedor = document.querySelector(".conteiner")
+    p = document.createElement("p")
+    p = document.createTextNode(perimetro)
+    contenedor.appendChild(p)
 }

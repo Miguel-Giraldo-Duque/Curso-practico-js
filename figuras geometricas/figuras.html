@@ -10,16 +10,33 @@
     <section>
         <h2>Taller de figuras geometricas </h2>
         <section>
-            <form>
+            <form class="conteiner">
                 <label for="input-cuadrado">Ingresa el valor de los lados de tu cuadrado </label>
                 <input id = "input-cuadrado" type="number">
                 <button type="button" onclick="hallarareaCuadrado()">Calcular area</button>
                 <button type="button" onclick="hallarperimetroCuadrado()">Calcular perimetro</button>
+                
+            </form>
+        </section>
+    </section>
+    <section>
+        <h1>Descuentos y porsentajes</h1>
+        <section>
+            <form>
+                <label for="precio">Ingresa el precio del producto  </label>
+                <input id = "precio" type="number">
+                <label for="descuento">Ingresa el descuento de tu producto </label>
+                <input id = "descuento" type="number">
+                <p id="resultadoP"></p>
+                <button type="button" onclick="hallarPrecioFinal()">Hallar mi precio con descuento</button>
+               
+                
             </form>
         </section>
     </section>
     
     <script src="./figuras.js"></script>
+    <script src="./porsentajes.js"></script>
 
 </body>
 </html>
